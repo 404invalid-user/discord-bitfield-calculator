@@ -1,0 +1,15 @@
+{
+    "name": "discord-bitfield-calculator",
+    "version": "1.0.0",
+    "description": "input your discord bitfield and it will return an array of the permission names",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "discord",
+        "permissions"
+    ],
+    "author": "404invalid-user",
+    "license": "MIT"
+}
