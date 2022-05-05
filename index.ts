@@ -37,8 +37,8 @@ const permissions = {
     USE_PRIVATE_THREADS: 0x1000000000,
     USE_EXTERNAL_STICKERS: 0x2000000000
 };
-module.exports.help = "see http://invaliduser.uk.to/discord-bitfield-calculator"
-module.exports.permissions = (permBitfield) => {
+
+export const genPermissions = (permBitfield: number) => {
     let currentPermissions = [];
     const permissionUpper = Math.floor(permBitfield / 0x100000000);
     const permissionLower = Math.floor(permBitfield % 0x100000000);
@@ -51,10 +51,11 @@ module.exports.permissions = (permBitfield) => {
     };
     return currentPermissions;
 }
-module.exports.bitfield = (bitfield) => {
+
+export const bitfield = (bitfield: number) => {
     if (permissions[bitfield]) {
         return permissions[bitfield];
     } else {
-        return new Error("that is not a valid bitfield");
+        return new Error("Invalid bitfield");
     };
 }
