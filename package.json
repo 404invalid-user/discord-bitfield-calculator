@@ -1,22 +1,23 @@
 {
-    "name": "discord-bitfield-calculator",
-    "version": "1.0.1",
-    "description": "input your discord bitfield and it will return an array of the permission names",
-    "main": "index.ts",
-    "scripts": {
-        "build": "tsc"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jonerrr/discord-bitfield-calculator.git"
-    },
-    "keywords": [
-        "discord",
-        "permissions"
-    ],
-    "author": "404invalid-user",
-    "license": "MIT",
-    "devDependencies": {
-        "typescript": "^4.6.4"
-    }
+  "name": "@joner/discord-bitfield-calculator",
+  "version": "1.0.1",
+  "description": "input your discord bitfield and it will return an array of the permission names",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonerrr/discord-bitfield-calculator.git"
+  },
+  "keywords": [
+    "discord",
+    "permissions"
+  ],
+  "author": "jonah",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
 }
