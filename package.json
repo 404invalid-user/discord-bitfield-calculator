@@ -1,11 +1,12 @@
 {
   "name": "@joner/discord-bitfield-calculator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "input your discord bitfield and it will return an array of the permission names",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest --config jestconfig.json"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   "author": "jonah",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.1",
     "typescript": "^4.6.4"
   }
 }

@@ -1,4 +1,4 @@
-const permissions: { [key: string]: any } = {
+const permissions: { [key: string]: number } = {
   CREATE_INSTANT_INVITE: 0x1,
   KICK_MEMBERS: 0x2,
   BAN_MEMBERS: 0x4,
@@ -42,7 +42,7 @@ export const genPermissions = (permBitfield: number) => {
   let currentPermissions: string[] = [];
   const permissionUpper = Math.floor(permBitfield / 0x100000000);
   const permissionLower = Math.floor(permBitfield % 0x100000000);
-  for (let key in permissions) {
+  for (const key in permissions) {
     if (
       (permissions[key] >= 0x100000000 &&
         permissionUpper & Math.floor(permissions[key] / 0x100000000)) ||
@@ -56,9 +56,9 @@ export const genPermissions = (permBitfield: number) => {
   return currentPermissions;
 };
 
-export const bitfield = (bitfield: number) => {
-  if (permissions[bitfield]) {
-    return permissions[bitfield];
+export const genBitfield = (permission: string) => {
+  if (permissions[permission]) {
+    return permissions[permission];
   } else {
     return new Error("Invalid bitfield");
   }
