@@ -41,7 +41,7 @@ const permissions = {
 	START_EMBEDDED_ACTIVITIES: 0x8000000000,
 	MODERATE_MEMBERS : 0x10000000000,
 };
-module.exports.help = "see http://invaliduser.uk.to/discord-bitfield-calculator"
+module.exports.help = "see https://www.npmjs.com/package/discord-bitfield-calculator"
 module.exports.permissions = (permBitfield) => {
     let currentPermissions = [];
     const permissionUpper = Math.floor(permBitfield / 0x100000000);

@@ -1,6 +1,6 @@
 {
     "name": "discord-bitfield-calculator",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "input your discord bitfield and it will return an array of the permission names",
     "main": "index.js",
     "scripts": {
